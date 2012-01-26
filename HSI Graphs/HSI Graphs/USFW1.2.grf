@@ -1,0 +1,83 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.3.0.384
+MinVersion = 2.5
+OS = Windows NT 6.1 Service Pack 1
+
+[Axes]
+xMin = -0.81286127
+xMax = 26.51277699
+xTickUnit = 1
+xGridUnit = 1
+xShowGrid = 1
+xAutoTick = 0
+xAutoGrid = 0
+xLabel = degrees C
+yMin = -0.22517632
+yMax = 1.34239709
+yTickUnit = 0.1
+yGridUnit = 0.1
+yShowGrid = 1
+yAutoTick = 0
+yAutoGrid = 0
+yLabel = HSI Rating
+AxesColor = clBlue
+GridColor = 0x00FF9999
+ShowLegend = 1
+Radian = 1
+AxesStyle = 2
+
+[PointSeries1]
+FillColor = clRed
+LineColor = clBlue
+Size = 5
+Style = 0
+LineSize = 4
+LineStyle = 0
+LabelPosition = 1
+Points = 0,0;1,0.15;2,0.3;6,0.75;8,0.9;10,1;12,1;14,1;16,1;18,0.9;19,0.8;21,0.55;22,0.4;23,0.2;24,0;
+LegendText = Series 1
+
+[Func1]
+FuncType = 0
+y = -0.0074031305*x^2+0.18195128*x-0.036105734
+Visible = 0
+LegendText = f(x)=-0.0074031305*x^2+0.18195128*x-0.036105734; R²=0.9883
+Color = clGreen
+
+[Func2]
+FuncType = 0
+y = -0.00011778536*x^3-0.0031846921*x^2+0.14416186*x+0.011174604
+Visible = 0
+LegendText = f(x)=-0.00011778536*x^3-0.0031846921*x^2+0.14416186*x+0.011174604; R²=0.999
+Color = clBlack
+
+[Func3]
+FuncType = 0
+y = -2.3207062E-08*x^5-4.8984116E-06*x^4+0.00016326325*x^3-0.00772437*x^2+0.16667525*x-0.0036653649
+LegendText = f(x)=-2.3207062E-08*x^5-4.8984116E-06*x^4+0.00016326325*x^3-0.00772437*x^2+0.16667525*x-0.0036653649; R²=0.9997
+Color = clTeal
+
+[Func4]
+FuncType = 0
+y = -2.8068109E-07*x^5+5.3661662E-06*x^4+9.7539543E-05*x^3-0.008859389*x^2+0.17513909*x-0.0087043687
+Visible = 0
+LegendText = f(x)=-2.8068109E-07*x^5+5.3661662E-06*x^4+9.7539543E-05*x^3-0.008859389*x^2+0.17513909*x-0.0087043687; R²=0.9981
+Color = clGreen
+
+[Label1]
+Placement = 0
+Pos = 0.601695188816762;1.2155707623301
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang4105{\\fonttbl{\\f0\\fnil\\fcharset0 Times New Roman;}{\\f1\\fnil Times New Roman;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\ul\\b\\f0\\fs40 Maximum Temperature\\f1\\fs36\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Data]
+TextLabelCount = 1
+FuncCount = 4
+PointSeriesCount = 1
+ShadeCount = 0
+RelationCount = 0
+OleObjectCount = 0
+

@@ -1,0 +1,95 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.3.0.384
+MinVersion = 2.5
+OS = Windows NT 6.1 Service Pack 1
+
+[Axes]
+xMin = -1.36433308160996
+xMax = 23.0990837322021
+xTickUnit = 1
+xGridUnit = 1
+xShowGrid = 1
+xAutoTick = 0
+xAutoGrid = 0
+xLabel = Dissolved Oxygen (mg/L)
+yMin = -0.271794953648606
+yMax = 1.20987275625242
+yTickUnit = 0.2
+yGridUnit = 0.1
+yShowGrid = 1
+yAutoTick = 0
+yAutoGrid = 0
+yLabel = HSI Rating
+AxesColor = clBlue
+GridColor = 0x00FF9999
+ShowLegend = 1
+Radian = 1
+LegendPlacement = 0
+LegendPos = 0.624597081462855,2.55946241988658
+
+[Label1]
+Placement = 0
+Pos = 8.77812134792172;0.453377234668308
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang4105{\\fonttbl{\\f0\\fnil\\fcharset0 Arial;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\ul\\b\\fs28 Avg Min DO Low Water/Embryo Devel\\par\n\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[PointSeries1]
+FillColor = clRed
+LineColor = clTeal
+Size = 5
+Style = 0
+LineSize = 4
+LineStyle = 0
+LabelPosition = 1
+Points = 3,0;3.5,0.2;4.5,0.55;5,0.7;7,1.0;9,1.0;20,1.0;
+LegendText = <15C
+
+[PointSeries2]
+FillColor = clRed
+LineColor = clFuchsia
+Size = 5
+Style = 0
+LineSize = 4
+LineStyle = 0
+LabelPosition = 1
+Points = 5,0;5.5,0.2;6.5,0.55;8.5,1;9,1;20,1;
+LegendText = > 15C
+
+[Func1]
+FuncType = 0
+y = 0.0013768305*x^3-0.068485321*x^2+0.82819275*x-1.9107564
+Visible = 0
+LegendText = f(x)=0.0013768305*x^3-0.068485321*x^2+0.82819275*x-1.9107564; R²=0.9997
+Color = clRed
+
+[Func2]
+FuncType = 0
+y = -0.010416667*x^3+0.16634615*x^2-0.50629006*x-0.32151442
+Visible = 0
+LegendText = f(x)=-0.010416667*x^3+0.16634615*x^2-0.50629006*x-0.32151442; R²=0.9999
+Color = clPurple
+
+[Func3]
+FuncType = 0
+y = -7.6402558E-05*x^5+0.0033989094*x^4-0.051411008*x^3+0.30163121*x^2-0.35995001*x-0.50273739
+LegendText = f(x)=-7.6402558E-05*x^5+0.0033989094*x^4-0.051411008*x^3+0.30163121*x^2-0.35995001*x-0.50273739; R²=1
+Color = clPurple
+
+[Func4]
+FuncType = 0
+y = 0.0002846196*x^5-0.012676519*x^4+0.20417625*x^3-1.577225*x^2+6.3332239*x-10.724138
+Visible = 0
+LegendText = f(x)=0.0002846196*x^5-0.012676519*x^4+0.20417625*x^3-1.577225*x^2+6.3332239*x-10.724138; R²=1
+Color = clPurple
+
+[Data]
+TextLabelCount = 1
+FuncCount = 4
+PointSeriesCount = 2
+ShadeCount = 0
+RelationCount = 0
+OleObjectCount = 0
+

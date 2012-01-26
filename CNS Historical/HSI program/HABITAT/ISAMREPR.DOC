@@ -1,0 +1,69 @@
+                    ISAMREPR Repair Utility
+
+The Microsoft ISAM package includes the ISAMREPR.exe utility to
+help recover databases that become corrupted. ISAMREPR can only
+restore physical integrity to a database (i.e., consistency
+among the tables in the database). ISAM does not pre-image
+changes made in a database and write them to a temporary file.
+Therefore, it is not possible to restore individual records
+entered if a crash occurs between the time a record is entered
+in the table and the next physical disk write. (When data is
+entered into an .rdf database, the data is written directly to
+disk when the <F2> SAVE command is issued. The most data that
+can be lost from a power outage is the record currently being
+entered.) 
+
+When ISAMREPR restores the database, it systematically goes
+through every table and index and recreates the database, using
+every piece of internally consistent information in the file.
+If anything is found that cannot be reconciled with the other
+information in the file, it is deleted. This restores
+consistency to the database. It is possible that some blocks of
+data will never be reconciled with the database and will
+therefore be lost.
+
+The synatx for ISAMREPR is as follows:
+
+        isamrepr databasename.rdf <enter>
+
+The databasename is the filename of the database you need to
+repair. ISAMREPR restores physical integrity to the database and
+prints messages to the screen whenever it takes any action that
+results in the loss of data. The messages describe the types of
+problems that were discovered and corrected. You can redirect
+this output to a file or to the printer using the DOS
+redirection operator (">"). The messages that may appear are
+included in the following table:
+
+Message:    Table was truncated; data lost
+    During structural analysis of the table's pages, an inconsistent
+    page caused the table to be truncated as of the last uncorrupted
+    page. This message is only given once for any affected table. 
+
+Message:    One or more records were deleted.
+    One of ISAM's internal tables was found to have inconsistent
+    data. 
+
+Message:    Cannot repair <name>: Not a database file
+    Repair process has been aborted because the file was not
+    recognisable as a database.
+
+Message:    Cannot repair database:  Uncorrectable problems
+    Repair process has been aborted because the database cannot be
+    repaired. Some common reasons include: system tables not found
+    in the expected location; any of the system tables is
+    structually inconsistent, etc
+
+Message:    Repair of <name> completed successfully.
+    Repair process completed.
+
+A repair may also be aborted for reasons having nothing to do
+with the state of the database. Messages resulting from such
+cases include (but are not limited to): Disk Full, Out of
+Memory, File Not Found.
+
+When you use the ISAMREPR utility it requires additional space
+within your database to accomplish its work. This adds at least
+32k to the size of the database. Do not run the utility if your
+disk does not have this amount of space available in the current
+working directory. 

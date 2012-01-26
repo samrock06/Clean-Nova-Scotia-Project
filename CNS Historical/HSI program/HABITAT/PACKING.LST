@@ -1,0 +1,17 @@
+These files should appear on your diskette:
+
+Data.exe            Data entry program
+Viewer.exe          Viewer for HSI tables
+
+ASalmon.crt         Criteria table for Atlantic Salmon
+Brookie.crt         Criteria table for Brook Trout
+
+PollyBrk.rdf        Sample database file for Polly Brook. This file 
+                    is not complete because the data was derived from
+                    old survey forms and not all the data was collected 
+                    in past years.
+
+IsamRepr.exe        Utility to repair corrupted .rdf files
+IsamRepr.doc        instructions for above.
+
+                                            May 1994

@@ -1,0 +1,87 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.3.0.384
+MinVersion = 2.5
+OS = Windows NT 6.1 Service Pack 1
+
+[Axes]
+xMin = -2.30712648
+xMax = 30.46646428
+xTickUnit = 1
+xGridUnit = 1
+xShowGrid = 1
+xAutoTick = 0
+xAutoGrid = 0
+xLabel = % Cover
+yMin = -0.11002538
+yMax = 1.34750861
+yTickUnit = 0.1
+yGridUnit = 0.1
+yShowGrid = 1
+yAutoTick = 0
+yAutoGrid = 0
+yLabel = HSI Rating
+AxesColor = clBlue
+GridColor = 0x00FF9999
+ShowLegend = 1
+Radian = 1
+LegendPlacement = 0
+LegendPos = 5.12823360917566,1.34293236466056
+
+[PointSeries1]
+FillColor = clRed
+LineColor = clTeal
+Size = 5
+Style = 0
+LineSize = 4
+LineStyle = 0
+LabelPosition = 1
+Points = 0,0.2;2,0.35;10,0.9;14,1.0;20,1.0;
+LegendText = Juveniles
+
+[PointSeries2]
+FillColor = clRed
+LineColor = clBlue
+Size = 5
+Style = 0
+LineSize = 4
+LineStyle = 0
+LabelPosition = 1
+Points = 0,0.2;2,0.3;6,0.5;14,0.8;20,0.95;22,1.0;28,1.0;
+LegendText = Adults
+
+[Label1]
+Placement = 0
+Pos = 12.0334300578761;0.549234650298273
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang4105{\\fonttbl{\\f0\\fnil\\fcharset0 Arial;}{\\f1\\fnil Arial;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\ul\\b\\fs28 % Instream Cover >15cm deep, <15cm/sec\\par\n\\f1\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Func1]
+FuncType = 0
+y = -0.0029586846*x^2+0.099987474*x+0.18433109
+Visible = 0
+LegendText = f(x)=-0.0029586846*x^2+0.099987474*x+0.18433109; R²=0.9985
+Color = clRed
+
+[Func2]
+FuncType = 0
+y = 1.3971561E-05*x^4-0.00057903439*x^3+0.0045909392*x^2+0.068022487*x+0.2
+LegendText = f(x)=1.3971561E-05*x^4-0.00057903439*x^3+0.0045909392*x^2+0.068022487*x+0.2; R²=1
+Color = clRed
+
+[Func3]
+FuncType = 0
+y = -1.2746804E-06*x^4+5.4086147E-05*x^3-0.0015442227*x^2+0.057528931*x+0.19682772
+LegendText = f(x)=-1.2746804E-06*x^4+5.4086147E-05*x^3-0.0015442227*x^2+0.057528931*x+0.19682772; R²=0.9997
+Color = clRed
+
+[Data]
+TextLabelCount = 1
+FuncCount = 3
+PointSeriesCount = 2
+ShadeCount = 0
+RelationCount = 0
+OleObjectCount = 0
+
