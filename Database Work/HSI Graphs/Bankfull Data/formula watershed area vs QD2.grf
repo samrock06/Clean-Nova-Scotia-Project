@@ -1,0 +1,70 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.3.0.384
+MinVersion = 2.5
+OS = Windows NT 6.1 Service Pack 1
+
+[Axes]
+xMin = -5.98150242832622
+xMax = 207.626975851674
+xTickUnit = 5
+xGridUnit = 5
+xShowGrid = 1
+xAutoTick = 0
+xAutoGrid = 0
+xLabel = watershed area sq kmx
+yMin = -3.14037568999998
+yMax = 70.37556494
+yTickUnit = 2
+yGridUnit = 2
+yShowGrid = 1
+yAutoTick = 0
+yAutoGrid = 0
+yLabel = cu m / sec flow
+AxesColor = clBlue
+GridColor = 0x00FF9999
+ShowLegend = 1
+Radian = 1
+Title =  QD2 vs watershed area for NS not to be used in NW CB
+
+[Func1]
+FuncType = 0
+y = 0.6167x^0.836
+Visible = 0
+LegendText = QD2 to watershed area
+From = 10
+To = 400
+Steps = 5
+Color = clRed
+Size = 2
+StartPoint = 2
+EndPoint = 1
+
+[PointSeries1]
+FillColor = clRed
+LineColor = clRed
+Size = 2
+Style = 0
+LineSize = 3
+LineStyle = 1
+LabelPosition = 1
+Points = 362,92.9;420,107.5;201,52;216,55.6;50,17.5;20,6.5;21,7.3;15.7,4.8;101,24.3;127,29.5;147,34.2;512,108.5;41.6,10.4;314.6,71.3;316,71.3;26.4,11.8;33.2,14.5;129.2,47.5;318.6,109.5;131,34.1;546,95.8;1020,147;96.9,26.6;10.1,2.35;63.2,17.6;298,90.4;249,80.7;92.2,29.1;177,47;495,64;295,40.9;1250,211;370,78;146,41.9;650,126;389,105;1350,412;45.1,17;193,63.9;368,167;
+Visible = 0
+LegendText = Series 1
+
+[Func2]
+FuncType = 0
+y = 0.51210649*x^0.8741926
+LegendText = f(x)=0.51210649*x^0.8741926; R²=0.9414
+Color = clRed
+Size = 2
+
+[Data]
+TextLabelCount = 0
+FuncCount = 2
+PointSeriesCount = 1
+ShadeCount = 0
+RelationCount = 0
+OleObjectCount = 0
+

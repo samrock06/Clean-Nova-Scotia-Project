@@ -1,0 +1,59 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.3.0.384
+MinVersion = 2.5
+OS = Windows NT 6.1 Service Pack 1
+
+[Axes]
+xMin = 0.04598998
+xMax = 2769.93265571
+xTickUnit = 2
+xGridUnit = 2
+xLogScl = 1
+xShowGrid = 1
+xAutoTick = 0
+xAutoGrid = 0
+xLabel = cubic meters/ sec
+xAxisCross = 0.1
+yMin = 0.05109579
+yMax = 65.8775617
+yTickUnit = 2
+yGridUnit = 2
+yLogScl = 1
+yShowGrid = 1
+yAutoTick = 0
+yAutoGrid = 0
+yLabel =  Bankfull width in meters
+yAxisCross = 0.1
+AxesColor = clBlue
+GridColor = 0x00FF9999
+ShowLegend = 1
+Radian = 1
+Title = flow vs bankfull width 
+
+[PointSeries1]
+FillColor = clRed
+LineColor = clBlack
+Size = 2
+Style = 0
+LineSize = 4
+LineStyle = 0
+LabelPosition = 1
+Points = 0.1,2;0.25,2.7;1,4.2;13,9.7;20,11.3;200,25;
+LegendText = Series 1
+
+[Func1]
+FuncType = 0
+y = 4.2389299*x^0.33073685
+LegendText = f(x)=4.2389299*x^0.33073685; R²=0.999
+Color = clRed
+
+[Data]
+TextLabelCount = 0
+FuncCount = 1
+PointSeriesCount = 1
+ShadeCount = 0
+RelationCount = 0
+OleObjectCount = 0
+
